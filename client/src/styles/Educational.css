@@ -1,0 +1,120 @@
+.educational-page {
+    padding: 40px 5%;
+    background-color: #2B2B2B;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    color: #DCD6F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .educational-page h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #A593E0;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  
+  .educational-page .subtitle {
+    font-size: 1rem;
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 36px;
+    color: #DCD6F7;
+  }
+  
+  .edu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .edu-card {
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 8px 20px rgba(165, 147, 224, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 180px;
+  }
+  
+  .edu-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(165, 147, 224, 0.25);
+  }
+  
+  .edu-card h3 {
+    font-size: 1.2rem;
+    color: #A593E0;
+    margin-bottom: 12px;
+  }
+  
+  .edu-card p {
+    font-size: 0.95rem;
+    color: #DCD6F7;
+    margin-bottom: 16px;
+  }
+  
+  .edu-card button {
+    background-color: #A593E0;
+    color: #1f1f1f;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .edu-card button:hover {
+    background-color: #8a77d6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .educational-page h1 {
+      font-size: 1.8rem;
+    }
+  
+    .edu-card {
+      padding: 20px;
+    }
+  
+    .edu-card h3 {
+      font-size: 1.1rem;
+    }
+  
+    .edu-card p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .educational-page {
+      padding: 24px 12px;
+    }
+  
+    .educational-page h1 {
+      font-size: 1.6rem;
+    }
+  
+    .edu-card {
+      padding: 16px;
+    }
+  
+    .edu-card h3 {
+      font-size: 1rem;
+    }
+  
+    .edu-card p {
+      font-size: 0.85rem;
+    }
+  }
+  

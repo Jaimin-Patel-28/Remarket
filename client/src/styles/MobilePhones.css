@@ -1,0 +1,154 @@
+.mobile-phones-page {
+    padding: 40px 5%;
+    background-color: #2B2B2B;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mobile-phones-page h1 {
+    font-size: 2.2rem;
+    color: #BBA6F9;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  
+  .mobile-phones-page .subtitle {
+    font-size: 1rem;
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 36px;
+    color: #DAD6EC;
+  }
+  
+  .device-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    padding-bottom: 30px;
+  }
+  
+  .device-card {
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 8px 20px rgba(165, 147, 224, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .device-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(165, 147, 224, 0.25);
+  }
+  
+  .device-card h3 {
+    font-size: 1.2rem;
+    color: #BBA6F9;
+    margin-bottom: 12px;
+  }
+  
+  .device-card p {
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+    color: #E5E5E5;
+  }
+  
+  .device-card button {
+    background-color: #BBA6F9;
+    color: #1f1f1f;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .device-card button:hover {
+    background-color: #a28df0;
+  }
+  
+  /* ==========================
+     ✅ Media Queries for Better Responsiveness
+     ========================== */
+  
+  @media (max-width: 768px) {
+    .mobile-phones-page h1 {
+      font-size: 1.8rem;
+    }
+  
+    .mobile-phones-page .subtitle {
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+    }
+  
+    .device-card {
+      padding: 20px;
+    }
+  
+    .device-card h3 {
+      font-size: 1.05rem;
+    }
+  
+    .device-card p {
+      font-size: 0.9rem;
+    }
+  
+    .device-card button {
+      padding: 8px 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .mobile-phones-page {
+      padding: 30px 4%;
+    }
+  
+    .device-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    .mobile-phones-page h1 {
+      font-size: 1.6rem;
+    }
+  
+    .mobile-phones-page .subtitle {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .mobile-phones-page {
+      padding: 60px 10%;
+    }
+  
+    .device-grid {
+      gap: 32px;
+    }
+  
+    .device-card {
+      padding: 28px;
+    }
+  
+    .device-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .device-card p {
+      font-size: 1rem;
+    }
+  
+    .device-card button {
+      font-size: 1rem;
+    }
+  }
+  

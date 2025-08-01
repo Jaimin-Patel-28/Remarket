@@ -1,0 +1,156 @@
+/* * {
+  padding: 0;
+  margin: 0;
+} */
+
+/* Root header styling */
+.header {
+  background-color: #2B2B2B;
+  color: #DCD6F7;
+  padding: 24px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1000;
+}
+
+/* Logo / Brand Name */
+.header-title h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #DCD6F7;
+  letter-spacing: 1px;
+}
+
+/* Search Box Styling */
+.search-box {
+  display: flex;
+  width: 100%;
+  max-width: 420px;
+  margin: 12px 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  /* border: 1px solid #DCD6F7; */
+  background-color: #3E3E3E;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px 14px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #555555;
+  background-color: #3E3E3E;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search-box input::placeholder {
+  color: #bbb;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  border: 1px;
+  border-radius: 10px;
+  background: #DCD6F7;
+  color: #2B2B2B;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search-box button:hover {
+  background-color: #A593E0;
+  color: #fff;
+}
+
+.role-label{
+  margin: 0 0 10px 127px;
+
+}
+
+
+
+/* Navigation links */
+.header-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header-links a {
+  color: #DCD6F7;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-links a:hover {
+  background-color: #A593E0;
+  color: #2B2B2B;
+  border-color: #DCD6F7;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .header {
+    padding: 20px 32px;
+  }
+
+  .header-title h1 {
+    font-size: 2rem;
+  }
+
+  .header-links a {
+    font-size: 0.95rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .header-links {
+    flex-direction: row;
+    gap: 12px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .header-links a {
+    width: auto;
+    font-weight: bold;
+  }
+
+  .search-box {
+    margin: 10px auto;
+    width: 90%;
+  }
+
+  .role-label{
+    margin: 0 0 0px 17px;
+  
+  }
+}

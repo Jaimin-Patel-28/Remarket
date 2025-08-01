@@ -1,0 +1,116 @@
+.laptops-page {
+    padding: 40px 5%;
+    background-color: #2B2B2B;
+    color: #DCD6F7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .laptops-page h1 {
+    font-size: 2.2rem;
+    color: #A593E0;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  
+  .laptops-page .subtitle {
+    font-size: 1rem;
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 36px;
+    color: #DCD6F7;
+  }
+  
+  .laptop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .laptop-card {
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 8px 20px rgba(165, 147, 224, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .laptop-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(165, 147, 224, 0.25);
+  }
+  
+  .laptop-card h3 {
+    font-size: 1.2rem;
+    color: #A593E0;
+    margin-bottom: 12px;
+  }
+  
+  .laptop-card p {
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+    color: #DCD6F7;
+  }
+  
+  .laptop-card button {
+    background-color: #A593E0;
+    color: #1f1f1f;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .laptop-card button:hover {
+    background-color: #9274d9;
+  }
+  
+  /* RESPONSIVE STYLES */
+  
+  @media (max-width: 768px) {
+    .laptops-page {
+      padding: 32px 4%;
+    }
+  
+    .laptop-grid {
+      gap: 20px;
+    }
+  
+    .laptop-card {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .laptops-page h1 {
+      font-size: 1.8rem;
+    }
+  
+    .laptops-page .subtitle {
+      font-size: 0.95rem;
+    }
+  
+    .laptop-card h3 {
+      font-size: 1rem;
+    }
+  
+    .laptop-card p {
+      font-size: 0.85rem;
+    }
+  
+    .laptop-card button {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+    }
+  }
+  

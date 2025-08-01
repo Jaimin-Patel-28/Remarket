@@ -1,0 +1,142 @@
+.accessories-page {
+    padding: 40px 5%;
+    background-color: #1e1e1e; /* Match dark background */
+    color: #ffffff;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .accessories-page h1 {
+    font-size: 2.4rem;
+    color: #b197fc; /* light purple heading */
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .accessories-page .subtitle {
+    font-size: 1.05rem;
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 36px;
+    color: #cfcfcf;
+  }
+  
+  .accessories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+  }
+  
+  .accessory-card {
+    background-color: #151515;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .accessory-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  }
+  
+  .accessory-card h3 {
+    font-size: 1.2rem;
+    color: #b197fc;
+    margin-bottom: 8px;
+  }
+  
+  .accessory-card p {
+    font-size: 0.95rem;
+    color: #e0e0e0;
+    margin-bottom: 16px;
+    line-height: 1.5;
+  }
+  
+  .accessory-card button {
+    background-color: #b197fc;
+    color: #000;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .accessory-card button:hover {
+    background-color: #ffffff;
+    color: #1e1e1e;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .accessories-page h1 {
+      font-size: 2rem;
+    }
+  
+    .accessories-page .subtitle {
+      font-size: 1rem;
+      margin-bottom: 28px;
+    }
+  
+    .accessory-card {
+      padding: 20px;
+    }
+  
+    .accessory-card h3 {
+      font-size: 1.1rem;
+    }
+  
+    .accessory-card p {
+      font-size: 0.9rem;
+    }
+  
+    .accessory-card button {
+      padding: 8px 14px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .accessories-page {
+      padding: 24px 4%;
+    }
+  
+    .accessories-page h1 {
+      font-size: 1.8rem;
+    }
+  
+    .accessories-page .subtitle {
+      font-size: 0.95rem;
+    }
+  
+    .accessory-card {
+      padding: 16px;
+    }
+  
+    .accessory-card h3 {
+      font-size: 1rem;
+    }
+  
+    .accessory-card p {
+      font-size: 0.88rem;
+    }
+  
+    .accessory-card button {
+      padding: 8px 12px;
+      font-size: 0.88rem;
+    }
+  }
+  

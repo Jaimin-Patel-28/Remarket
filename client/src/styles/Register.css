@@ -1,0 +1,120 @@
+/* Root Container */
+.register-container {
+  max-width: 480px;
+  margin: 80px auto;
+  padding: 40px 32px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(43, 43, 43, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2B2B2B;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Heading */
+.register-container h2 {
+  font-size: 2rem;
+  color: #2B2B2B;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.register-form input {
+  padding: 14px 18px;
+  font-size: 1rem;
+  border: 1px solid #DCD6F7;
+  border-radius: 10px;
+  background-color: #f8f8fc;
+  color: #2B2B2B;
+  transition: all 0.3s ease;
+}
+
+.register-form input:focus {
+  border-color: #A593E0;
+  box-shadow: 0 0 0 3px rgba(165, 147, 224, 0.3);
+  outline: none;
+}
+
+/* Button */
+.register-form button {
+  padding: 14px 18px;
+  font-size: 1rem;
+  background-color: #A593E0;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.register-form button:hover {
+  background-color: #2B2B2B;
+  color: #DCD6F7;
+  transform: translateY(-1px);
+}
+
+/* Login Prompt */
+.register-login-prompt {
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 12px;
+  color: #2B2B2B;
+}
+
+.login-link {
+  margin-left: 6px;
+  color: #A593E0;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+  color: #2B2B2B;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .register-container {
+    padding: 32px 20px;
+    margin: 60px 16px;
+  }
+
+  .register-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .register-form input,
+  .register-form button {
+    font-size: 0.95rem;
+    padding: 12px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-container {
+    padding: 28px 16px;
+  }
+
+  .register-form input,
+  .register-form button {
+    font-size: 0.9rem;
+    padding: 10px 14px;
+  }
+
+  .register-login-prompt {
+    font-size: 0.9rem;
+  }
+}

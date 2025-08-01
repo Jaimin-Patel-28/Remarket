@@ -1,0 +1,28 @@
+.roleselector button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #A593E0;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px 0 0 23px;
+}
+
+.roleselector button:hover {
+    background-color: #DCD6F7;
+    color: #A593E0;
+    transform: translateY(-2px);
+}
+
+.roleselector h2 {
+    margin: 0 0 10px 80px;
+}
+
+@media (max-width: 768px) {
+    .roleselector h2 {
+        margin: 0 0 5px 17px;
+    }
+}

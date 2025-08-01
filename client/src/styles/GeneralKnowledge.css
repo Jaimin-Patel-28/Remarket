@@ -1,0 +1,94 @@
+.gk-page {
+    padding: 30px 16px;
+    background-color: #2B2B2B;
+    min-height: auto;
+    font-family: 'Segoe UI', sans-serif;
+    color: #DCD6F7; 
+    margin:auto;
+  }
+  
+  .gk-page h1 {
+    font-size: 28px;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #A593E0;
+  }
+  
+  .books-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .book-card {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(165, 147, 224, 0.15);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #DCD6F7;
+    border: 1px solid #3a3a3a;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(165, 147, 224, 0.25);
+  }
+  
+  .book-card h3 {
+    color: #A593E0;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .book-card p {
+    font-size: 14px;
+    color: #DCD6F7;
+    line-height: 1.5;
+  }
+  
+  /* 📱 Tablet */
+  @media (max-width: 768px) {
+    .gk-page h1 {
+      font-size: 24px;
+    }
+  
+    .book-card {
+      width: 100%;
+      max-width: 90%;
+    }
+  }
+  
+  /* 📱 Mobile */
+  @media (max-width: 480px) {
+    .gk-page {
+      padding: 20px 12px;
+    }
+  
+    .gk-page h1 {
+      font-size: 22px;
+    }
+  
+    .book-card h3 {
+      font-size: 18px;
+    }
+  
+    .book-card {
+      padding: 16px;
+      width: 100%;
+    }
+  
+    .book-card p {
+      font-size: 13px;
+    }
+  }
+  
+  /* @media (min-width: 1920px) {
+    .gk-page {
+        max-width: 100%;
+        font-size: 1.05rem;
+    }
+} */
