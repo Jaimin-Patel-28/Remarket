@@ -26,3 +26,8 @@
         margin: 0 0 5px 17px;
     }
 }
+@media (max-width: 480px) {
+    .roleselector h2 {
+        margin: 0 0 5px 17px;
+    }
+}
